@@ -1,11 +1,7 @@
-package _01_BasePackage;
+package _19_Simple_If_Statements;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
     }
 }
-
-
-
-

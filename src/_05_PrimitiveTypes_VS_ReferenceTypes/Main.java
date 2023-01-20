@@ -1,4 +1,4 @@
-package _06_PrimitiveTypes_VS_ReferenceTypes;
+package _05_PrimitiveTypes_VS_ReferenceTypes;
 
 import java.awt.*;
 
