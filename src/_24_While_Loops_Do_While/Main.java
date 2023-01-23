@@ -36,17 +36,32 @@ public class Main {
         } while ( k < cars.length);
 
 
-        System.out.println("--------------------------------");
-
+        System.out.println("------------------ while");
         Scanner scanner = new Scanner(System.in);
         String input = "";
         byte round = 0;
         while(!input.equals( "quit") && !input.equals("q") ){
             round++;
-            System.out.println("Enter a command");
+            System.out.print("Enter a command : ");
             input = scanner.next().trim().toLowerCase();
-            System.out.println("input = " + input);
-            System.out.println("Round : " +  round);
+            if(!input.equals( "quit") && !input.equals("q") ){
+                System.out.println("input = " + input);
+                System.out.println("Round : " +  round);
+            }
         }
+
+        System.out.println("------------------ do while");
+        Scanner scanner2 = new Scanner(System.in);
+        String input2 = "";
+        byte round2 = 0;
+        do{
+            round2++;
+            System.out.print("Enter a command : ");
+            input2 = scanner2.next().trim().toLowerCase();
+            if(!input2.equals( "quit") && !input2.equals("q") ){
+                System.out.println("input2 = " + input2);
+                System.out.println("Round2 : " +  round2);
+            }
+        }   while(!input2.equals( "quit") && !input2.equals("q"));
     }
 }
