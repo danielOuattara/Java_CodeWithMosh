@@ -15,27 +15,16 @@ public class TestTryCatch {
          }
          to test for valid user input
         */
-        final byte MONTHS_IN_YEAR = 12;
-        final byte ONE_HUNDRED = 100;
 
         final int MINIMAL_PRINCIPAL = 1000;
         final int MAXIMAL_PRINCIPAL = 1_000_000;
         final String PRINCIPAL_ERROR_MSG = "Enter a number between 1,000 and 1,000,000 ";
 
-        final int MINIMAL_INTEREST = 0;
-        final int MAXIMAL_INTEREST = 30;
-
-        final int MINIMAL_PERIOD_IN_YEARS = 1;
-        final int MAXIMAL_PERIOD_IN_YEARS = 30;
-
-        int principal = 0;
-        float annualInterestRate;
-        byte periodInYears;
-        float monthlyInterestRate;
-        int periodInMonths;
+        int principal;
 
         System.out.println("Mortgage Calculator");
         Scanner scanner = new Scanner(System.in);
+
 
         while (true) {
             try {
@@ -46,10 +35,12 @@ public class TestTryCatch {
                 } else {
                     System.out.println(PRINCIPAL_ERROR_MSG);
                 }
+
             } catch (Exception e) {
-                System.out.println("Error");
-                continue;
+                System.out.println(PRINCIPAL_ERROR_MSG);
+                scanner.next();
             }
         }
     }
+
 }
