@@ -1,4 +1,4 @@
-package _27_PROJECT_Mortgae_Calculator_Values_Range_Handling;
+package _27_PROJECT_Mortgae_Calculator_Values_Validations;
 
 import java.text.NumberFormat;
 import java.util.Scanner;
